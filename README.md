@@ -1,2 +1,2 @@
 # FYNANCE
-Financial Tracking Program Designed to use OpenAI alongside client input for a secure financial plan.
+Financial Tracking Program designed to use OpenAI alongside client input for a secure financial plan.
