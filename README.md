@@ -1,3 +1,6 @@
+# FYNANCE
+Financial Tracking Program designed to use OpenAI alongside client input for a secure financial plan.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
