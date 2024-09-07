@@ -1,25 +1,88 @@
-.landing-page {
-  text-align: center;
-  max-width: 600px;
-  margin: -100px auto 0; /* Added negative top margin */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.landing-page-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.landing-page-container::-webkit-scrollbar {
+  display: none;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.welcome-container {
+  padding-top: 100px; /* Adjust this value to account for the fixed header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+/* ... existing styles ... */
+
+/* Adjust these styles to ensure content fits within each section */
+.info-container, .creator-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ... rest of your existing styles ... */
+
+.welcome-section {
+  padding-top: 150px; /* Adjust this value to account for the fixed header */
+}
+
+/* ... existing styles ... */
+
+.welcome-container {
+  margin-bottom: 0;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin-bottom: 2rem;
 }
 
 .intro-text h2 {
   font-size: 1.5em;
-  font-weight: 300; /* This makes the font thin */
+  font-weight: 300;
   margin-bottom: 0.5rem;
   color: var(--text-color);
 }
 
 .intro-text h1 {
   font-size: 3.5em;
-  font-weight: 700; /* This makes the font bold */
+  font-weight: 700;
   margin-bottom: 1rem;
   color: var(--secondary-color);
+}
+
+.intro-text p {
+  font-size: 1.2em;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
 }
 
 .landing-page p {
@@ -40,7 +103,7 @@
 .get-started-button {
   font-size: 1.1em;
   padding: 0.7rem 1.5rem;
-  border-radius: 50px; /* This creates the pill shape */
+  border-radius: 50px;
   background-color: var(--secondary-color);
   color: white;
   display: flex;
@@ -49,8 +112,8 @@
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  width: 110px; /* Set initial width */
-  text-decoration: none; /* Add this line to ensure no text decoration */
+  width: 110px;
+  text-decoration: none;
 }
 
 .button-text {
@@ -69,7 +132,7 @@
 }
 
 .get-started-button:hover {
-  width: 140px; /* Set hover width */
+  width: 140px;
 }
 
 .get-started-button:hover .button-text {
@@ -79,4 +142,105 @@
 .get-started-button:hover .arrow-icon {
   opacity: 1;
   transform: translateX(0);
+}
+
+.info-container {
+  margin-top: 0;
+  padding: 50px 20px;
+}
+
+.info-container h2 {
+  font-size: 2em;
+  margin-bottom: 50px;
+  color: var(--text-color);
+}
+
+.info-container h2 .highlight {
+  color: var(--secondary-color);
+}
+
+.info-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.info-item {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  max-width: calc(28.33% - 20px);
+}
+
+.info-item:hover {
+  transform: translateY(-5px);
+}
+
+.info-icon {
+  font-size: 2.1em;
+  color: var(--secondary-color);
+  margin-bottom: 13px;
+}
+
+.info-item h3 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.info-item p {
+  font-size: 0.85em;
+  color: var(--light-grey);
+}
+
+.powered-by-openai {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.openai-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.creator-container {
+  margin-top: 0;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.creator-logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.creator-links {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.creator-icon {
+  font-size: 1.5em;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.creator-icon:hover {
+  color: var(--secondary-color);
+}
+
+.creator-text {
+  font-size: 0.9em;
+  color: var(--text-color);
 }
