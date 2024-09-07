@@ -8,7 +8,7 @@ import './App.css'; // Make sure this import exists
 
 function App() {
     return (
-        <Router>
+        <Router basename="/fynance">
             <div className="App">
                 <BackgroundParticles />
                 <Header />
