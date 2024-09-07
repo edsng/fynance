@@ -1,0 +1,34 @@
+.landing-page {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.intro-text h2 {
+  font-size: 1.5em;
+  font-weight: 300; /* This makes the font thin */
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.intro-text h1 {
+  font-size: 3.5em;
+  font-weight: 700; /* This makes the font bold */
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.landing-page p {
+  font-size: 1.2em;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.landing-page button {
+  font-size: 1.1em;
+  padding: 0.7rem 1.5rem;
+}

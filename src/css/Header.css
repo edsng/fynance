@@ -1,0 +1,63 @@
+.header {
+  background-color: rgba(20, 20, 20, 0.7); /* Semitransparent background */
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  position: fixed; /* Make header always visible */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it's above other elements */
+  backdrop-filter: blur(10px); /* Add blur effect for bokeh */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+
+.header-content {
+  position: relative; /* Ensure content is above the bokeh effect */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.logo {
+  height: 24px; /* Reduced from 30px to 80% of its original size */
+  margin-right: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.3rem; /* Reduced from 1.5rem */
+  color: var(--secondary-color);
+  font-weight: 600; /* Changed back to 600 */
+}
+
+.header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-left: 1rem;
+}
+
+.header nav ul li a {
+  color: var(--light-grey);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}

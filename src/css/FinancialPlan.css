@@ -1,0 +1,15 @@
+.financial-plan {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.financial-plan h2 {
+  margin-bottom: 1rem;
+}
+
+.financial-plan pre {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}

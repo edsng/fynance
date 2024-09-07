@@ -1,0 +1,19 @@
+.financial-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.financial-form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.financial-form button {
+  align-self: center;
+}
