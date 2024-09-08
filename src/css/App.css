@@ -1,0 +1,11 @@
+/* Add these global styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root, .App {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Your existing App.css styles... */

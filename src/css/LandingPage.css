@@ -1,3 +1,16 @@
+/* Add these global styles at the top of the file */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -172,6 +185,10 @@ body, html {
   border-radius: 8px;
   transition: transform 0.3s ease;
   max-width: calc(28.33% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .info-item:hover {
@@ -193,6 +210,7 @@ body, html {
 .info-item p {
   font-size: 0.85em;
   color: var(--light-grey);
+  margin: 0;
 }
 
 .powered-by-openai {
@@ -243,4 +261,43 @@ body, html {
 .creator-text {
   font-size: 0.9em;
   color: var(--text-color);
+}
+
+/* Add this media query at the end of the file */
+@media (max-width: 768px) {
+    .info-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-item {
+        width: 100%;
+        max-width: 350px; /* Adjust this value as needed */
+    }
+
+    /* Add these styles to ensure content fits within the viewport */
+    .landing-page-container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .snap-section {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .info-container, .creator-container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .info-item {
+        max-width: 100%;
+        width: 100%;
+    }
 }
