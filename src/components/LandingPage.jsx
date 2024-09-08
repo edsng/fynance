@@ -65,6 +65,14 @@ function LandingPage() {
         }
     };
 
+    const fadeInVariant = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { duration: 1.2 }
+        }
+    };
+
     return (
         <div className="landing-page-container" ref={scrollRef}>
             <motion.div 
@@ -92,9 +100,9 @@ function LandingPage() {
 
             <motion.div 
                 className="info-container snap-section"
-                variants={container}
+                variants={fadeInVariant}
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
             >
                 <motion.h2 variants={infoItem}>
@@ -125,9 +133,9 @@ function LandingPage() {
 
             <motion.div 
                 className="creator-container snap-section"
-                variants={container}
+                variants={fadeInVariant}
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
             >
                 <motion.div className="creator-logo" variants={item}>
