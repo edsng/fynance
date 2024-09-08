@@ -22,7 +22,6 @@ body, html {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -36,20 +35,20 @@ body, html {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Center vertically */
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
 }
 
 .welcome-container {
-  padding-top: 100px; /* Adjust this value to account for the fixed header */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Center vertically */
   align-items: center;
   text-align: center;
   height: 100vh;
+  padding-top: 0; /* Remove top padding */
 }
 
 /* ... existing styles ... */
@@ -59,6 +58,10 @@ body, html {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  min-height: 100vh;
 }
 
 /* ... rest of your existing styles ... */
@@ -312,5 +315,14 @@ body, html {
     .info-item {
         max-width: 100%;
         width: 100%;
+    }
+
+    .snap-section,
+    .welcome-container,
+    .info-container,
+    .creator-container {
+        padding-top: 60px; /* Add some top padding to account for the fixed header on mobile */
+        min-height: 100vh;
+        height: auto; /* Allow the height to adjust based on content */
     }
 }
