@@ -34,9 +34,15 @@
 
 .header h1 {
   margin: 0;
-  font-size: 1.3rem; /* Reduced from 1.5rem */
+  font-size: 1.2rem; /* Reduced from 1.5rem */
   color: var(--secondary-color);
-  font-weight: 600; /* Changed back to 600 */
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(45deg, #3498db, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .header nav ul {

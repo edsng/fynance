@@ -89,7 +89,11 @@ body, html {
   font-size: 3.5em;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--secondary-color);
+  background: linear-gradient(45deg, #3498db, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .intro-text p {
@@ -127,6 +131,7 @@ body, html {
   position: relative;
   width: 110px;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .button-text {
@@ -170,6 +175,14 @@ body, html {
 
 .info-container h2 .highlight {
   color: var(--secondary-color);
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(45deg, #3498db, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+
 }
 
 .info-grid {
