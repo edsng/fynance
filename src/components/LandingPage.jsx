@@ -87,7 +87,7 @@ function LandingPage() {
                     <motion.p variants={item}>Your personal AI-powered financial advisor</motion.p>
                 </div>
                 <motion.div variants={item} className="get-started-container">
-                    <Link to="/plan">
+                    <Link to="/form">
                         <div className="get-started-button">
                             <span className="button-text">Get Started</span>
                             <span className="arrow-icon">

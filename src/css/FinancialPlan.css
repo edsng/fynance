@@ -1,15 +1,18 @@
 .financial-plan {
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .financial-plan h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
-.financial-plan pre {
-  background-color: #f0f0f0;
-  padding: 1rem;
-  border-radius: 4px;
-  overflow-x: auto;
+.financial-plan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.financial-plan li {
+  margin-bottom: 10px;
 }

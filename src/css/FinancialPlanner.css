@@ -1,0 +1,10 @@
+.financial-planner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.financial-planner h1 {
+  margin-bottom: 30px;
+}
