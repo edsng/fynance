@@ -188,27 +188,31 @@ body, html {
   border-radius: 8px;
   transition: transform 0.3s ease;
   max-width: calc(28.33% - 20px);
-}
-
-.info-item:hover {
-  transform: translateY(-5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .info-icon {
   font-size: 2.1em;
   color: var(--secondary-color);
   margin-bottom: 13px;
+  display: flex;
+  justify-content: center;
 }
 
 .info-item h3 {
   font-size: 1.1em;
   margin-bottom: 8px;
   color: var(--text-color);
+  width: 100%;
 }
 
 .info-item p {
   font-size: 0.85em;
   color: var(--light-grey);
+  width: 100%;
 }
 
 .powered-by-openai {
@@ -297,5 +301,6 @@ body, html {
     .info-item {
         max-width: 100%;
         width: 100%;
+        align-items: center;
     }
 }
