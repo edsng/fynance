@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FinancialForm from './FinancialForm';
+import LoginScreen from './LoginScreen';
 import FinancialPlan from './FinancialPlan';
 import '../css/FinancialPlanner.css';
 
@@ -14,7 +14,7 @@ function FinancialPlanner() {
     <div className="financial-planner">
       <h1>Financial Planner</h1>
       {!planData ? (
-        <FinancialForm onSubmit={handleFormSubmit} />
+        <LoginScreen onSubmit={handleFormSubmit} />
       ) : (
         <FinancialPlan data={planData} />
       )}
